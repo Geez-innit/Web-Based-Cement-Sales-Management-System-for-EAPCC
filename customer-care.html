@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Customer Care Login | EAPCC</title>
+	<style>
+		:root { --green: #176b4d; --light-green: #eaf5ef; --gold: #e2ad35; --text: #18352b; }
+		* { box-sizing: border-box; }
+		body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: Arial, sans-serif; color: var(--text); background: linear-gradient(135deg, #f5faf7, #dceee4); }
+		.login-card { width: min(92%, 430px); padding: 42px 38px; background: #fff; border-radius: 18px; box-shadow: 0 16px 45px rgba(23, 107, 77, .16); }
+		.brand { text-align: center; margin-bottom: 30px; }
+		.logo { width: 64px; height: 64px; margin: 0 auto 14px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--green); font-size: 25px; font-weight: 700; border: 5px solid var(--light-green); }
+		h1 { margin: 0 0 8px; font-size: 25px; }
+		.subtitle { margin: 0; color: #6a7d75; font-size: 14px; }
+		label { display: block; margin: 18px 0 7px; font-size: 14px; font-weight: 600; }
+		input { width: 100%; padding: 13px 14px; border: 1px solid #d4e1da; border-radius: 8px; font-size: 15px; outline: none; }
+		input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(23, 107, 77, .12); }
+		.options { display: flex; justify-content: space-between; align-items: center; margin: 16px 0 24px; font-size: 13px; }
+		.remember { display: flex; align-items: center; gap: 7px; color: #60736b; }
+		.remember input { width: auto; accent-color: var(--green); }
+		a { color: var(--green); text-decoration: none; font-weight: 600; }
+		button { width: 100%; padding: 14px; border: 0; border-radius: 8px; color: #fff; background: var(--green); font-size: 16px; font-weight: 700; cursor: pointer; }
+		button:hover { background: #10583e; }
+		.footer { margin: 24px 0 0; text-align: center; color: #71837b; font-size: 13px; }
+		.footer a { margin-left: 4px; }
+	</style>
+</head>
+<body>
+	<main class="login-card">
+		<header class="brand">
+			<div class="logo" aria-hidden="true">E</div>
+			<h1>Welcome back</h1>
+			<p class="subtitle">Sign in to your EAPCC customer care account</p>
+		</header>
+		<form action="#" method="post">
+			<label for="email">Email address</label>
+			<input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+			<div class="options">
+				<label class="remember"><input type="checkbox" name="remember"> Remember me</label>
+				<a href="#forgot-password">Forgot password?</a>
+			</div>
+			<button type="submit">Sign in</button>
+		</form>
+		<p class="footer">Need assistance?<a href="#contact">Contact customer care</a></p>
+	</main>
+</body>
+</html>
